@@ -1,4 +1,6 @@
-app.initVueEnv(); //该方法在pclink里才生效，将初始化vue.js的内容。
+// app.initVueEnv(); //该方法在pclink里才生效，将初始化vue.js的内容。
+import Vue from 'vue'
+window.app = window.parent.app;
 
 import App from './app.vue'
 //组件按需加载
